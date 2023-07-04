@@ -20,7 +20,7 @@ function App() {
         <nav className="navbar">
           <h3 className="project-name">Restaurant Review Website</h3>
           <ul className="navbar-columns">
-                <li><Link to="/home">Home</Link></li>
+                <li><Link to="/">Home</Link></li>
                 {/* <li><Link to={"/reviews"}>Reviews</Link></li> */}
                 <li>{user?
                   (<a href="/home" onClick={logOut}>Logout</a>):
@@ -31,7 +31,6 @@ function App() {
         </nav>
         <Routes>
           <Route path={"/"} element={<Home/>}/>
-          <Route path={"/home"} element={<Home/>}/>
           <Route path="/login" element={<Login login={login}/>}/>
           <Route path="/reviews/:id" element={<Reviews user={user}/>}/>
           <Route path="/reviews/add-edit/:id" element={<AddReviews user={user}/>}/>
