@@ -10,7 +10,7 @@ export default function Login(props) {
         event.preventDefault();
         console.log(user);
         props.login(user)
-        navigate("/home")
+        navigate("/")
     }
 
     function handleInput(event) {

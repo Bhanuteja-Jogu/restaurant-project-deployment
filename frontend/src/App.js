@@ -23,7 +23,7 @@ function App() {
                 <li><Link to="/">Home</Link></li>
                 {/* <li><Link to={"/reviews"}>Reviews</Link></li> */}
                 <li>{user?
-                  (<a href="/home" onClick={logOut}>Logout</a>):
+                  (<a href="/" onClick={logOut}>Logout</a>):
                   (<Link to={"/login"} >Login</Link>)
                 }
                 </li>
